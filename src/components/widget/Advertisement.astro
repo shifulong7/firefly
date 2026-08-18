@@ -120,7 +120,7 @@ const useContentPadding = !adConfig.padding;
     {adConfig.link && (
       <div class="text-center">
         <a
-          href={adConfig.link.url}
+          href={adConfig.link.external ? adConfig.link.url : url(adConfig.link.url)}
           target={adConfig.link.external ? "_blank" : "_self"}
           rel={adConfig.link.external ? "noopener noreferrer" : ""}
           class="btn-regular inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-105"

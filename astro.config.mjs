@@ -63,11 +63,14 @@ const adapter = process.env.CF_WORKERS
 		})
 	: undefined;
 
+// 站点部署基础路径，GitHub Pages 子路径部署时为 "/<仓库名>/"，根域名部署时为 "/"
+const siteBase = "/firefly/";
+
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.site_url,
 
-	base: "/",
+	base: siteBase,
 	trailingSlash: "always",
 
 	// 字体配置 - 只加载实际使用的字体，跳过未引用的以加快构建
@@ -273,7 +276,7 @@ export default defineConfig({
 					: []),
 				remarkMath,
 				remarkReadingTime,
-				remarkWikiLink,
+				[remarkWikiLink, { baseUrl: siteBase }],
 				remarkImageGrid,
 				remarkExcerpt,
 				remarkDirective,

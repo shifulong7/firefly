@@ -158,7 +158,7 @@ const handleInput = () => {
             <div class="space-y-4">
                 {#each results as result}
                     <div class="card-base p-6 block rounded-(--radius-large)">
-                        <a href={result.url} class="block group">
+                        <a href={formatUrl(result.url)} class="block group">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-90 group-hover:text-(--primary) transition-colors">
                                 {@html result.meta.title}
                             </h5>

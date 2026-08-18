@@ -44,7 +44,7 @@ function normalizeContentPath(value) {
 	return withoutPrefix.length > 0 ? withoutPrefix.join("/") : "";
 }
 
-function createPostUrl(contentPath) {
+function createPostUrl(contentPath, siteBase = "") {
 	const segments = contentPath.split("/");
 
 	if (segments.at(-1)?.toLowerCase() === "index") {
@@ -55,7 +55,9 @@ function createPostUrl(contentPath) {
 		.map((segment) => encodeURIComponent(segment))
 		.join("/");
 
-	return `/posts/${encodedPath ? `${encodedPath}/` : ""}`;
+	const base = siteBase && siteBase !== "/" ? siteBase.replace(/\/+$/, "") : "";
+
+	return `${base}/posts/${encodedPath ? `${encodedPath}/` : ""}`;
 }
 
 /**
@@ -441,13 +443,13 @@ function createWikiLinkCard(parsed, context) {
 		"a",
 		{
 			class: "card-wiki-link no-styling",
-			href: createPostUrl(resolvedPath),
+			href: createPostUrl(resolvedPath, context.siteBase),
 		},
 		children,
 	);
 }
 
-function createWikiLink(value) {
+function createWikiLink(value, context) {
 	const parsed = parseWikiLinkValue(value);
 	if (!parsed) {
 		return null;
@@ -471,7 +473,10 @@ function createWikiLink(value) {
 	}
 
 	const pageUrl = parsed.contentPath
-		? createPostUrl(meta ? toPostId(meta) : parsed.contentPath)
+		? createPostUrl(
+				meta ? toPostId(meta) : parsed.contentPath,
+				context?.siteBase ?? "",
+			)
 		: "";
 	const url = `${pageUrl}${parsed.heading ? `#${slug(parsed.heading)}` : ""}`;
 
@@ -482,7 +487,7 @@ function createWikiLink(value) {
 	};
 }
 
-function replaceWikiLinks(value) {
+function replaceWikiLinks(value, context) {
 	const children = [];
 	let cursor = 0;
 	let changed = false;
@@ -492,7 +497,7 @@ function replaceWikiLinks(value) {
 			continue;
 		}
 
-		const link = createWikiLink(match[1]);
+		const link = createWikiLink(match[1], context);
 		if (!link) {
 			continue;
 		}
@@ -555,7 +560,7 @@ function transformNode(node, context) {
 		}
 
 		if (child.type === "text") {
-			const replacement = replaceWikiLinks(child.value);
+			const replacement = replaceWikiLinks(child.value, context);
 			if (replacement) {
 				node.children.splice(index, 1, ...replacement);
 				index += replacement.length - 1;
@@ -587,10 +592,11 @@ function transformNode(node, context) {
  * post's `entry.id` rather than from the link text, so a bare file name
  * still produces the post's real URL.
  */
-export function remarkWikiLink() {
+export function remarkWikiLink(options = {}) {
 	return (tree, file) => {
 		const context = {
 			currentDir: file?.path ? path.dirname(file.path) : null,
+			siteBase: options.baseUrl ?? "",
 		};
 		transformNode(tree, context);
 	};
