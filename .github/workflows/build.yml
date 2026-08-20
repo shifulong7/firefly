@@ -22,7 +22,7 @@ jobs:
     name: Astro Check for Node.js ${{ matrix.node }}
     steps:
       - name: Checkout
-        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        uses: actions/checkout@v7
 
       - name: Install pnpm via corepack
         run: |
@@ -30,7 +30,7 @@ jobs:
           corepack prepare --activate
 
       - name: Setup Node.js
-        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node }}
 
@@ -48,7 +48,7 @@ jobs:
     name: Astro Build for Node.js ${{ matrix.node }} # Corrected job name
     steps:
       - name: Checkout
-        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        uses: actions/checkout@v7
 
       - name: Install pnpm via corepack
         run: |
@@ -56,7 +56,7 @@ jobs:
           corepack prepare --activate
 
       - name: Setup Node.js
-        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node }}
 
