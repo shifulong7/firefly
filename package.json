@@ -39,8 +39,13 @@
     "@iconify/svelte": "^5.2.2",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^3.1.4",
+<<<<<<< HEAD
     "@mermanjs/web": "0.8.0-alpha.3",
     "@napi-rs/wasm-runtime": "^1.2.3",
+=======
+    "@mermanjs/web": "0.8.0-alpha.5",
+    "@napi-rs/wasm-runtime": "^1.2.2",
+>>>>>>> origin/dependabot-npm_and_yarn-mermanjs-web-0.8.0-alpha.5
     "@swup/astro": "^1.8.0",
     "@tailwindcss/typography": "^0.5.20",
     "@types/hast": "^3.0.5",
