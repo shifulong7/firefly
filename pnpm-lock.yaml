@@ -17,8 +17,12 @@ importers:
         version: 14.2.5(@types/node@25.9.1)(astro@7.2.9(@astrojs/markdown-remark@7.2.4)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@25.9.1)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(wrangler@4.119.0)(yaml@2.9.0)
 =======
         specifier: ^14.2.0
+<<<<<<< HEAD
         version: 14.2.0(@types/node@25.9.1)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@25.9.1)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(wrangler@4.127.0)(yaml@2.9.0)
 >>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
+=======
+        version: 14.2.0(@types/node@25.9.1)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@25.9.1)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(wrangler@4.120.0)(yaml@2.9.0)
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
       '@astrojs/markdown-remark':
         specifier: ^7.2.4
         version: 7.2.4
@@ -206,8 +210,13 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       wrangler:
+<<<<<<< HEAD
         specifier: ^4.127.0
         version: 4.127.0
+=======
+        specifier: ^4.120.0
+        version: 4.120.0
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
     devDependencies:
       '@astrojs/ts-plugin':
         specifier: ^1.10.11
@@ -4544,6 +4553,7 @@ packages:
     engines: {node: '>=22.0.0'}
     hasBin: true
 
+<<<<<<< HEAD
   miniflare@5.20260826.0-alpha:
     resolution: {integrity: sha512-ZXR3Bieg+B5MK0T/zYIWaZiCGCb9Z3en4+/TleYKhIGPLx/e0cRcG/ZvvTviUapVBBK2zODB+aiypdIojU3x6Q==}
 >>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
@@ -4551,6 +4561,10 @@ packages:
 
   miniflare@5.20260828.0-alpha:
     resolution: {integrity: sha512-6nbxhZEcz/UET3Y1OnYPsrAUjUmuFoib3ynUqteRdn1YnDxsLg8cwgZJZCk9QmtOmGzXwzXzgE/d/C0dJAPtVw==}
+=======
+  miniflare@5.20260801.1-alpha:
+    resolution: {integrity: sha512-BHPVzIDA6mbx7LefxpvkXW7DHx9FKB9GorZatbnrrFTt3CVMU8zuUpbgyCuebwDKcTTOZos43ta8GQ0eMVEpxA==}
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
     engines: {node: '>=22.0.0'}
 
   minimatch@10.2.5:
@@ -6239,6 +6253,7 @@ packages:
     hasBin: true
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   workerd@1.20260828.1:
     resolution: {integrity: sha512-pB9yvt0kkwZDAGZHmpY59r0o3hM0DzdW6BJERqwZOhunZ3ssOyDSgQxOQer2cSZW4YCFeOTIQYN1qwhK5wv/Cw==}
 =======
@@ -6250,6 +6265,10 @@ packages:
 
   wrangler@4.127.0:
     resolution: {integrity: sha512-4dPqcBEMJfGeZeNnjHT7ThNJs+EiNYxUTg4ywqIdQubcXHBhFeVMQyHV4A9AOhZRFr83cckqdds034KGcr/dtw==}
+=======
+  wrangler@4.120.0:
+    resolution: {integrity: sha512-cBmu/MeaB/fPacC0JpATs4duTOCagBxrZo+vBzuTX06tLzwSyAHE1drlHUZ8rP0VqVz1fy3ReGYTiHdKkoHltg==}
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
@@ -6394,6 +6413,7 @@ snapshots:
       - prettier-plugin-astro
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   '@astrojs/cloudflare@14.2.5(@types/node@25.9.1)(astro@7.2.9(@astrojs/markdown-remark@7.2.4)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@25.9.1)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(wrangler@4.119.0)(yaml@2.9.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.10.4
@@ -6414,6 +6434,17 @@ snapshots:
       vite: 8.1.5(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0)
       wrangler: 4.127.0
 >>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
+=======
+  '@astrojs/cloudflare@14.2.0(@types/node@25.9.1)(astro@7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@25.9.1)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(wrangler@4.120.0)(yaml@2.9.0)':
+    dependencies:
+      '@astrojs/internal-helpers': 0.10.2
+      '@astrojs/underscore-redirects': 1.0.3
+      '@cloudflare/vite-plugin': 1.47.0(vite@8.1.5(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(wrangler@4.120.0)
+      astro: 7.2.0(@astrojs/markdown-remark@7.2.2)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@25.9.1)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0)
+      piccolore: 0.1.3
+      vite: 8.1.5(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0)
+      wrangler: 4.120.0
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
     transitivePeerDependencies:
       - '@types/node'
       - '@vitejs/devtools'
@@ -7616,10 +7647,14 @@ snapshots:
       workerd: 1.20260826.1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   '@cloudflare/unenv-preset@2.16.1(unenv@2.0.0-rc.24)(workerd@1.20260828.1)':
 =======
   '@cloudflare/vite-plugin@1.47.0(vite@8.1.5(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(wrangler@4.127.0)':
 >>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
+=======
+  '@cloudflare/vite-plugin@1.47.0(vite@8.1.5(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0))(wrangler@4.120.0)':
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
     dependencies:
       unenv: 2.0.0-rc.24
 <<<<<<< HEAD
@@ -7637,8 +7672,12 @@ snapshots:
 =======
       vite: 8.1.5(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0)(terser@5.46.0)(tsx@4.23.12)(yaml@2.9.0)
       workerd: 1.20260722.1
+<<<<<<< HEAD
       wrangler: 4.127.0
 >>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
+=======
+      wrangler: 4.120.0
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
       ws: 8.21.0
     transitivePeerDependencies:
       - bufferutil
@@ -11428,12 +11467,17 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+<<<<<<< HEAD
   miniflare@5.20260826.0-alpha:
 >>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
+=======
+  miniflare@5.20260801.1-alpha:
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       sharp: 0.35.2
       undici: 7.29.0
+<<<<<<< HEAD
       workerd: 1.20260826.1
       ws: 8.21.0
       youch: 4.1.0-beta.10
@@ -11447,6 +11491,9 @@ snapshots:
       sharp: 0.35.2
       undici: 7.29.0
       workerd: 1.20260828.1
+=======
+      workerd: 1.20260801.1
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
       ws: 8.21.0
       youch: 4.1.0-beta.10
     transitivePeerDependencies:
@@ -13409,16 +13456,24 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20260828.1
       '@cloudflare/workerd-windows-64': 1.20260828.1
 
+<<<<<<< HEAD
   wrangler@4.119.0:
 =======
   wrangler@4.127.0:
 >>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
+=======
+  wrangler@4.120.0:
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
     dependencies:
       '@cloudflare/kv-asset-handler': 0.5.0
       '@cloudflare/unenv-preset': 2.16.1(unenv@2.0.0-rc.24)(workerd@1.20260826.1)
       blake3-wasm: 2.1.5
       esbuild: 0.28.1
+<<<<<<< HEAD
       miniflare: 5.20260826.0-alpha
+=======
+      miniflare: 5.20260801.1-alpha
+>>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.24
       workerd: 1.20260826.1
