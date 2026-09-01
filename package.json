@@ -39,13 +39,8 @@
     "@iconify/svelte": "^5.2.2",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^3.1.4",
-<<<<<<< HEAD
     "@mermanjs/web": "0.8.0-alpha.3",
-    "@napi-rs/wasm-runtime": "^1.2.3",
-=======
-    "@mermanjs/web": "0.8.0-alpha.5",
     "@napi-rs/wasm-runtime": "^1.2.2",
->>>>>>> origin/dependabot-npm_and_yarn-mermanjs-web-0.8.0-alpha.5
     "@swup/astro": "^1.8.0",
     "@tailwindcss/typography": "^0.5.20",
     "@types/hast": "^3.0.5",
@@ -78,28 +73,17 @@
     "remark-directive": "^4.0.0",
     "remark-math": "^6.0.0",
     "remark-sectionize": "^2.1.0",
-<<<<<<< HEAD
     "sanitize-html": "^2.17.7",
-    "satori": "^0.29.0",
-    "satteri": "^0.9.5",
-    "sharp": "^0.35.4",
-=======
-    "sanitize-html": "^2.17.6",
     "satori": "^0.33.4",
     "satteri": "^0.10.5",
-    "sharp": "^0.35.3",
->>>>>>> origin/dependabot-npm_and_yarn-minor-updates-e066c7858b
+    "sharp": "^0.35.4",
     "stylus": "^0.64.0",
     "svelte": "^5.56.10",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.12",
     "typescript": "^6.0.3",
     "unist-util-visit": "^5.1.0",
-<<<<<<< HEAD
     "wrangler": "^4.127.0"
-=======
-    "wrangler": "^4.120.0"
->>>>>>> origin/dependabot-npm_and_yarn-minor-updates-02b64fe4a8
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.11",
